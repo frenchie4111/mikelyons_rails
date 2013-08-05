@@ -5,6 +5,7 @@
 	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
+	<%= yield :stylesheets %>
 </head>
 <body>
 	<div id="body">
@@ -13,10 +14,11 @@
 				M<a id="i">i</a>ke Lyons  
 			</div>
 			<div id="menu">
+				<% current_page = yield(:current_page) %>
 				<a class="nav_link" href="http://blog.mikelyons.org">
 					Blog
 				</a>
-				<%= link_to "About Me",	about_path, id: "aboutme", class: "nav_link nav_link_selected color2" %>
+				<%= link_to "About Me", about_path, id: "aboutme", class: "nav_link" + ((current_page == "about")?" nav_link_selected color2" : "") %>
 				<%= link_to "Projects",	projects_path, id: "projects", class: "nav_link" %>
 				<%= link_to "Contact",	contact_path, id: "contact", class: "nav_link" %>
 			</div>
