@@ -1,0 +1,32 @@
+#ss
+{
+	background-repeat: no-repeat; 
+	background-size:80px 80px; 
+	background-image: url('images/ss_icon.png'); 
+	background-position: 15px 10px;
+	color:white;
+}
+
+#sts
+{
+	background-repeat: no-repeat; 
+	background-image: url('images/sts.png'); 
+	color:black;
+}
+
+#ttc
+{
+	background-repeat: no-repeat; 
+	background-image: url('images/ttc_icon.png'); 
+	color:white;
+}
+.content_image_right
+{
+	float: right;
+	margin: 10px 0px 10px 10px;
+}
+.content_image_left
+{
+	float: left;
+	margin: 10px 10px 10px 0px;
+}

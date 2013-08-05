@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mikelyons</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>Mike Lyons - Software Engineer</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="body">
+		<div id="menu_area">
+			<div class="title" id="name">
+				M<a id="i">i</a>ke Lyons  
+			</div>
+			<div id="menu">
+				<a class="nav_link" href="http://blog.mikelyons.org">
+					Blog
+				</a>
+				<%= link_to "About Me",	about_path, id: "aboutme", class: "nav_link nav_link_selected color2" %>
+				<%= link_to "Projects",	projects_path, id: "projects", class: "nav_link" %>
+				<%= link_to "Contact",	contact_path, id: "contact", class: "nav_link" %>
+			</div>
+		</div>
+		<div id="content_area">
+			<%= yield %>
+		</div>
+		<div id="ibox" class="content">
+			Renee is awesome
+		</div>
+	</div>
 </body>
 </html>
