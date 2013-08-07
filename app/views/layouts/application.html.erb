@@ -18,9 +18,9 @@
 				<a class="nav_link" href="http://blog.mikelyons.org">
 					Blog
 				</a>
-				<%= link_to "About Me", about_path, id: "aboutme", class: "nav_link" + ((current_page == "about")? "nav_link_selected color2" : "") %>
-				<%= link_to "Projects",	projects_path, id: "projects", class: "nav_link" %>
-				<%= link_to "Contact",	contact_path, id: "contact", class: "nav_link" %>
+				<%= link_to "About Me", about_path, id: "aboutme", class: "nav_link" + ((current_page == "about")? " nav_link_selected color2" : "") %>
+				<%= link_to "Projects",	projects_path, id: "projects", class: "nav_link"+ ((current_page == "projects")? " nav_link_selected color2" : "") %>
+				<%= link_to "Contact",	contact_path, id: "contact", class: "nav_link"+ ((current_page == "contact")? " nav_link_selected color2" : "") %>
 			</div>
 		</div>
 		<div id="content_area">
