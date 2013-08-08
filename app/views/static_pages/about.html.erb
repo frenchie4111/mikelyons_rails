@@ -1,9 +1,9 @@
 <%
-content_for :stylesheets  do
-	stylesheet_link_tag 'top_contentbox'
+content_for :page_includes do
+	stylesheet_link_tag('top_contentbox') + 
+	javascript_include_tag('main_script')
 end
-%>
-<% provide(:current_page, "contact") %>
+provide(:current_page, "about") %>
 <div class="content" id="main_content" style="min-height: 300px;">
 	<%= image_tag( "me_cartoon.png", alt: "Cartoon Picture of Me", height: "300px", style: "float: right; padding-left: 5px;") %>
 	My name is Mike Lyons, and I am a Software Engineering student at Rochester Institute of Technology. I am a dedicated and brilliant programmer who enjoys applying his programing knowledge to solve a variety of problems. I am currently looking for Co-ops or Internships as a software engineer.
@@ -13,30 +13,30 @@ end
 	My current resume is available here: <a href="resume.pdf">Resume</a>
 </div>
 <div id="more_info">
-	<div class="content_menu" id="menu1">
-		<div class="content_menu_item content_menu_item_selected color2" id="technical">
-			<div class="content_menu_item_text">
+	<div class="top_content_menu" id="menu1">
+		<div class="top_content_menu_item top_content_menu_item_selected color2" id="technical">
+			<div class="top_content_menu_item_text">
 				Technical Skills
 			</div>
 		</div>
-		<div class="content_menu_item color2" id="ss">
-			<div class="content_menu_item_text">
+		<div class="top_content_menu_item color2" id="ss">
+			<div class="top_content_menu_item_text">
 				Serpent Software
 			</div>
 		</div>
-		<div class="content_menu_item color2" id="exp">
-			<div class="content_menu_item_text">
+		<div class="top_content_menu_item color2" id="exp">
+			<div class="top_content_menu_item_text">
 				Work Experience
 			</div>
 		</div>
-		<div class="content_menu_item color2" id="2">
-			<div class="content_menu_item_text">
+		<div class="top_content_menu_item color2" id="2">
+			<div class="top_content_menu_item_text">
 				For Fun
 			</div>
 		</div>
 	</div>
-	<div class="content_box color2" id="menu1_box">
-		<div class="content content_box_item content_box_item_selected" id="technical_box">
+	<div class="top_content_box color2" id="menu1_box">
+		<div class="content top_content_box_item top_content_box_item_selected" id="technical_box">
 			<h3>Technical Skills</h3>
 			I have technical knowledge in the following programming languages:
 			<ul class="content_list">
@@ -53,7 +53,7 @@ end
 			</ul>
 		</div>
 
-		<div class="content content_box_item" id="ss_box">
+		<div class="content top_content_box_item" id="ss_box">
 			<center><%= image_tag("serpent.png", height: "100px") %></center>
 			Serpent Software is the unofficial programming team that I publish most of my software under the name of. This team is sometimes just me, but the other members of the team include:<br/>
 			<ul class="content_list">
@@ -63,7 +63,7 @@ end
 			</ul>				
 		</div>
 
-		<div class="content content_box_item" id="exp_box">
+		<div class="content top_content_box_item" id="exp_box">
 			<h3>Work Experience</h3>
 			<b>RIT</b> - Lab Technician - 2012-13 School Year - Responsibilities included:
 			<ul class="content_list">
@@ -86,7 +86,7 @@ end
 			<br/>
 		</div>
 
-		<div class="content content_box_item" id="2_box">
+		<div class="content top_content_box_item" id="2_box">
 			<h3>For Fun</h3>
 			<%= image_tag( "First-Logo.png", height: "100px", style: "float: left; padding-right: 5px;" ) %>
 			During high school a large part of my inspiration has come from the FIRST Robotics program. My team was the Powerhawks FRC team 1111. I was the head of the programming team my senior year, and a large part of creating the website for the team. FIRST robotics is an amazing program that allows for high school kids to develop an idea of what it is like to build and deploy a product in a real world setting under a real world deadline.

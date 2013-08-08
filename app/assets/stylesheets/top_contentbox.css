@@ -2,13 +2,13 @@
  *= require_self
  */
 
-.content_menu
+.top_content_menu
 {
 	width: inherit;
 	height: 35px;
 	background: #333333;
 }
-.content_menu_item, .content_menu_item_selected
+.top_content_menu_item, .top_content_menu_item_selected
 {
 	float: left;
 	min-width: 120px;
@@ -18,29 +18,29 @@
 	padding-right: 5px;
 	text-align: center;
 }
-.content_menu_item:hover
+.top_content_menu_item:hover
 {
 	cursor: pointer;
 }
-.content_menu_item_text
+.top_content_menu_item_text
 {
 	padding-top: 7px;
 }
-.content_menu_item_selected
+.top_content_menu_item_selected
 {
 	margin-bottom: 0px;
 	padding: 0px 5px 5px 5px;
 }
 
-.content_box
+.top_content_box
 {
 	min-height: 300px;
 }
-.content_box_item
+.top_content_box_item
 {
 	display:none;
 }
-.content_box_item_selected
+.top_content_box_item_selected
 {
 	display:block;
 }

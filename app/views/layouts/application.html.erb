@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Mike Lyons - Software Engineer</title>
+	<%= stylesheet_link_tag		"http://fonts.googleapis.com/css?family=Shanti" %>
 	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
-	<%= yield :stylesheets %>
+	<%= yield :page_includes %>
 </head>
 <body>
-	<div id="body">
+	<div id="body" data-no-turbolink>
 		<div id="menu_area">
 			<div class="title" id="name">
 				M<a id="i">i</a>ke Lyons  
