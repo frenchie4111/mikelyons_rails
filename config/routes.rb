@@ -7,6 +7,10 @@ Mikelyons::Application.routes.draw do
   match '/projects', to: 'static_pages#projects', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
 
+  
+  get '/blog', to: 'blog_posts#show_all', as: :blog
+  get '/blog/category/:category', to: 'blog_posts#show_category', as: :blog_category
+
   root 'static_pages#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
